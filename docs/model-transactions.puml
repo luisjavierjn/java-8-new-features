@@ -1,0 +1,16 @@
+@startuml
+
+class Transaction {
+    - Trader trader
+    - int year
+    - int value
+}
+
+class Trader {
+    - String name
+    - String city
+}
+
+Trader <- Transaction
+
+@enduml

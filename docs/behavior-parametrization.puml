@@ -1,0 +1,13 @@
+@startuml
+
+interface ApplePredicate {
+    +boolean test(Apple apple)
+}
+
+class AppleGreenColorPredicate
+class AppleHeavyWeightPredicate
+
+ApplePredicate <-- AppleGreenColorPredicate
+ApplePredicate <-- AppleHeavyWeightPredicate
+ApplePredicate <-- AppleRedAndHeavyPredicate
+@enduml

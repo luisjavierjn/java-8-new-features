@@ -1,0 +1,18 @@
+@startuml
+
+Class Person {
+    - Car car
+}
+
+Class Car {
+    - Insurance insurance
+}
+
+Class Insurance {
+    - String name
+}
+
+Person -> Car
+Car -> Insurance
+
+@enduml

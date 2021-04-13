@@ -1,0 +1,16 @@
+@startuml
+
+class Apple {
+    int weight
+    Color color
+}
+
+enum Color {
+    GREEN
+    RED
+    YELLOW
+}
+
+Apple --> Color
+
+@enduml
